@@ -3,7 +3,7 @@ import random  #Import library random untuk menghasilkan posisi makanan secara a
 import time  #Import library time untuk menambahkan jeda antar pergerakan.
 
 #Konfigurasi awal
-width, height = 20, 10  #Ukuran area permainan (kolom x baris).
+width, height = 20, 10  #Ukuran area permainan menggunakan konsep koordinat kartesius(y, x).
 snake = [(5, 5)]  #Posisi awal ular (kepala ular).
 direction = (0, 1)  #Arah awal ular bergerak ke kanan.
 food = (random.randint(0, height - 1), random.randint(0, width - 1))  #Posisi awal makanan secara acak.
