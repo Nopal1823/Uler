@@ -1,6 +1,5 @@
 import os  #Import library os untuk membersihkan layar terminal.
 import random  #Import library random untuk menghasilkan posisi makanan secara acak.
-import time  #Import library time untuk menambahkan jeda antar pergerakan.
 
 #Konfigurasi awal
 width, height = 20, 10  #Ukuran area permainan (Kolom x Baris).
@@ -64,8 +63,6 @@ while not game_over:  #Loop utama berjalan selama permainan belum berakhir.
 
     #Tambahkan kepala baru ke ular
     snake.insert(0, new_head)  #Tambahkan posisi kepala baru ke daftar ular.
-
-    time.sleep(0.2)  #Tambahkan jeda waktu untuk mengontrol kecepatan permainan.
 
 if game_over:  #Jika permainan berakhir.
     print(f"Your final score: {score}")  #Cetak skor akhir pemain.
